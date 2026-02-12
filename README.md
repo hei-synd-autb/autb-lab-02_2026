@@ -8,7 +8,7 @@
 
 Cours AutB
 
-# N'importe quoi !
+
 
 Author: [Cédric Lenoir](mailto:cedric.lenoir@hevs.ch)
 
