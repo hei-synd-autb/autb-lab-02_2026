@@ -8,7 +8,6 @@
 
 Cours AutB
 
-My test
 
 Author: [Cédric Lenoir](mailto:cedric.lenoir@hevs.ch)
 
