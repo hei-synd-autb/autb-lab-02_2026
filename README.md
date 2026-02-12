@@ -8,7 +8,7 @@
 
 Cours AutB
 
-new test
+
 Author: [Cédric Lenoir](mailto:cedric.lenoir@hevs.ch)
 
 Vous trouverez la donnée du travail pratique sous :
