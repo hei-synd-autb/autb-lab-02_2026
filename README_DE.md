@@ -10,7 +10,7 @@ Cours AutB
 
 Author: [Cédric Lenoir](mailto:cedric.lenoir@hevs.ch)
 
-> Version 2025, Version 1.0
+> Version 2026, Version 1.0
 
 # LAB 02 Strukturierte Programmierung eines Förderers
 
