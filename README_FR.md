@@ -489,13 +489,13 @@ En vous référant au programme ``PLC_PRG`` ci-dessous, ajouter :
 PROGRAM PLC_PRG
 VAR
     // If not in test mode, Function Blocks below are enabled
-	testMode		: BOOL;
+    testMode        : BOOL;
     
-        fbStationOne	: FB_Station;
-	fbStationTwo	: FB_Station;
-	fbStationThree	: FB_Station;
-	fbOutStation	: FB_OutStation;
-	fbDrive		: FB_Drive;
+    fbStationOne    : FB_Station;
+    fbStationTwo    : FB_Station;
+    fbStationThree  : FB_Station;
+    fbOutStation    : FB_OutStation;
+    fbDrive         : FB_Drive;
 END_VAR
 ```
 
