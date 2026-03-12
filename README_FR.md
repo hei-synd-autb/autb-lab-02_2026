@@ -351,10 +351,10 @@ Programmer les différents **Control Modules** en respectant les URS (User Reque
 - Si l'entrée ``Enable`` est ``FALSE``, le **FB** est inactif.
 - Une variable ``VAR_IN_OUT`` permet de passer la structure ``ST_StationConveyor`` en paramètre.
 - une variable de sortie ``diCounter`` compte le nombre de pièces qui sont détectées par le capteur en entrée de station.
-- au moment où une pièce est détectée par le capteur, une sortie ``stop`` est activée à ``TRUE``, une sortie ``release`` est mise à ``FALSE``.
+- lorsque le capteur qui détecte une pièce commute (front montant), une sortie ``stop`` est activée à ``TRUE``, une sortie ``release`` est mise à ``FALSE``.
 - La sortie hardware ``bLed`` prend la valeur de ``stop``.
 - Si l'on appuie sur le bouton bButton, la sortie ``release`` passe à ```TRUE``` et la sortie ``stop`` passe à ``FALSE``.
-- Si l'on appuie pendant deux secondes ou plus sur le bouton de la station, la variable ``diCounter`` passe à ``0```.
+- Si l'on appuie pendant deux secondes ou plus sur le bouton de la station, la variable ``diCounter`` est mise à ``0``.
 
 ```mermaid
 

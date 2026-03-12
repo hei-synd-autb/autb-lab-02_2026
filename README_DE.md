@@ -355,9 +355,9 @@ Programmieren Sie die verschiedenen **Control Modules** unter Beachtung der unte
 - Wenn der Eintrag ``Enable`` auf ``FALSE`` gesetzt ist, ist der **FB** inaktiv.
 - Eine Variable ``VAR_IN_OUT`` ermöglicht es, die Struktur ``ST_StationConveyor`` als Parameter zu übergeben.
 - Eine Ausgangsvariable ``diCounter`` zählt die Anzahl der Münzen, die vom Sensor am Stationseingang erkannt werden.
-- in dem Moment, in dem eine Münze vom Sensor erkannt wird, wird ein Ausgang ``stop`` auf ``TRUE`` gesetzt, ein Ausgang ``release`` wird auf ``FALSE`` gesetzt.
+- Wenn der Sensor, der einen Gegenstand erkennt, schaltet (steigende Flanke), wird ein ``Stop``-Ausgang auf ``TRUE`` gesetzt und ein ``Release``-Ausgang auf `` FALSE``.
 - Der Hardwareausgang ``bLed`` wird auf den Wert ``stop`` gesetzt.
-- Wird die Taste bButton gedrückt, wird der Ausgang ``release`` auf ```TRUE`` und der Ausgang ``stop`` auf ``FALSE`` gesetzt.
+- Wird die Taste bButton gedrückt, wird der Ausgang ``release`` auf ``TRUE`` und der Ausgang ``stop`` auf ``FALSE`` gesetzt.
 - Wird die Stationstaste zwei oder mehr Sekunden lang gedrückt, wird die Variable ``diCounter`` auf ``0`` gesetzt.
 
 ```mermaid
