@@ -133,7 +133,7 @@ classDiagram
 # <u> 2ème étape </u>
 
 ## Objectifs :
-- Créer une instance de la structure de données ``ST_Conveyor`` dans le programme ``PLC_PRG`` et compléter le programme afin de lier les entrées et les sorties du convoyeur avec cette instance.
+- Créer une instance de la structure de données ``ST_Conveyor`` dans le programme ``PRG_Student`` et compléter le programme afin de lier les entrées et les sorties du convoyeur avec cette instance.
 - Vérifier le fonctionnement des entrées /sorties du convoyeur.
 
 <br>
@@ -142,11 +142,11 @@ classDiagram
 
 <br>
 
-Compléter votre programme principal ``PLC_PRG`` en vous référant à l'exemple ci-dessous.
+Compléter votre programme principal ``PRG_Student`` en vous référant à l'exemple ci-dessous.
 
 
 ```iecst
-PROGRAM PLC_PRG
+PROGRAM PRG_Student
 VAR
 	diMyLoop		: DINT;
 	emConveyor		: ST_Conveyor;  // Your structure
@@ -269,7 +269,7 @@ Pour écrire  -->  [Ctrl + F7]
 ## Objectifs :
 
 - Programmer des **FB (Function Block)** qui vont permettre de piloter différents **Control Module (CM)**.
-- Compléter le **programme** principal ``PLC_PRG`` (considéré ici comme un **Equipment Module (EM)**).
+- Compléter le **programme** principal ``PRG_Student`` (considéré ici comme un **Equipment Module (EM)**).
 
 <br>
 
@@ -391,11 +391,11 @@ classDiagram
 
 # Appel des "Control Modules" depuis le programme principal
 
-Compléter le programme principal ``PLC_PRG`` en intégrant l'appel des Control Modules en vous référant à l'exemple ci-dessous:
+Compléter le programme principal ``PRG_Student`` en intégrant l'appel des Control Modules en vous référant à l'exemple ci-dessous:
 
 
 ```iecst
-PROGRAM PLC_PRG
+PROGRAM PRG_Student
 VAR
     // If not in test mode, Function Blocks below are enabled
 	testMode		: BOOL;
@@ -458,7 +458,7 @@ GVL_Abox.uaAboxInterface.uaDigitalOut.Output_0_0 := emConveyor.cm01.bLed;
 La variable ``testMode`` de type BOOL peut être ajoutée pour permettre de désactiver l'appel des Control Modules.
 
 ```iecst
-PROGRAM PLC_PRG
+PROGRAM PRG_Student
 VAR
     // If not in test mode, Function Blocks below are enabled
 	testMode		: BOOL;
@@ -479,14 +479,14 @@ fbStationOne(Enable := NOT testMode,
 
 # Finalisation du programme
 
-En vous référant au programme ``PLC_PRG`` ci-dessous, ajouter :
+En vous référant au programme ``PRG_Student`` ci-dessous, ajouter :
 - une fonction qui gèrent les entrées (--> FC_GetInput)
 - une fonction qui gèrent les sorties (--> FC_SetOutput)
 
 
 
 ```iecst
-PROGRAM PLC_PRG
+PROGRAM PRG_Student
 VAR
     // If not in test mode, Function Blocks below are enabled
     testMode        : BOOL;
